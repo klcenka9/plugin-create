@@ -1,0 +1,18 @@
+ban-duration: 7d
+verification-checks: 2
+verification-time-window: 30s
+whitelisted-players: []
+exemption-permission: anticheatban.immune
+debug-mode: false
+# Patterns match the kick reason provided by an anti-cheat plugin; tune to your plugins' exact messages.
+detection-words:
+  - '(?i)\b(matrix)\b.*\b(check|hack|cheat|violation|failed|fail|flag|kick|detected)\b'
+  - '(?i)\b(vulcan)\b.*\b(check|hack|cheat|violation|failed|fail|flag|kick|detected)\b'
+  - '(?i)\b(grim(?:ac)?)\b.*\b(check|hack|cheat|violation|failed|fail|flag|kick|detected)\b'
+  - '(?i)\b(anticheat|anti-cheat)\b.*\b(cheat|hacks?|violations?|flagged|detected|kick)\b'
+  - '(?i)\b(fly|flight|flying)\b.*\b(check|hack|cheat|violation|failed|fail|flag|kick|detected)\b'
+  - '(?i)\b(speed|timer|velocity)\b.*\b(check|hack|cheat|violation|failed|fail|flag|kick|detected)\b'
+  - '(?i)\b(killaura|kill-aura|aura|aimbot|aim-assist)\b.*\b(check|hack|cheat|violation|failed|fail|flag|kick|detected)\b'
+  - '(?i)\b(reach|hitbox|autoclicker|auto-clicker|clicks per second|cps)\b.*\b(check|hack|cheat|violation|failed|fail|flag|kick|detected)\b'
+  - '(?i)\b(no.?fall|jesus|scaffold|tower|step|phase|noclip|no.?slow|fast.?break|fast.?place|inventory|packet|baritone|blink|desync)\b.*\b(check|hack|cheat|violation|failed|fail|flag|kick|detected)\b'
+  - '(?i)\b(cheat|hacks?)\b.*\b(detected|detector|violation|flagged|kick|removed)\b'
