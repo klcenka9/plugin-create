@@ -1,0 +1,37 @@
+name: AntiCheatBan
+version: '${project.version}'
+main: org.example.autoban.AntiCheatBan
+api-version: '1.21'
+folia-supported: true
+author: OpenAI
+description: Verifies anti-cheat kick signals before temporary bans.
+commands:
+  acb:
+    description: AntiCheatBan administration
+    usage: /acb <reload|check|whitelist|unban|stats|list|autobans|violations|test>
+    permission: anticheatban.reload
+permissions:
+  anticheatban.immune:
+    description: Exempts a player from automatic bans
+    default: false
+  anticheatban.view:
+    description: Receives automatic ban notifications
+    default: op
+  anticheatban.reload:
+    default: op
+  anticheatban.check:
+    default: op
+  anticheatban.whitelist:
+    default: op
+  anticheatban.unban:
+    default: op
+  anticheatban.stats:
+    default: op
+  anticheatban.list:
+    default: op
+  anticheatban.autobans:
+    default: op
+  anticheatban.violations:
+    default: op
+  anticheatban.test:
+    default: op
